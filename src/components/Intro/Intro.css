@@ -99,6 +99,9 @@
   .figure-image{
     width: 75%;
   }
+  .blur {
+    left: 6%; 
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -106,6 +109,9 @@
     flex-direction: column;
     gap: 7rem;
     height: 64rem;
+  }
+  .blur {
+    left: 0%; 
   }
   .figure-image{
     width: 81%;

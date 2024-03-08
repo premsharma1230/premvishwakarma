@@ -1,60 +1,25 @@
 "use client";
 import React from "react";
 import "./_project.scss";
-import Image from "next/image"; 
-import Link from "next/link";
-import AmalImage from "@/assets/img/projects/amal-bg.png";
-import CachyImage from "@/assets/img/projects/cachyImage.png";
-import PrimeImage from "@/assets/img/projects/primeImage.png";
+import Image from "next/image";  
 import { WaveIcon } from "@/mock/icons";
+import {ProjectList} from "@/mock/projects";
 
 
-export const Projects = () => {
-  const projectList = [
-    {
-      image: AmalImage,
-      url:"https://www.amal.com/en",
-      title: "Amal",
-      content: "Next js, SCSS , Redux , MUI ,Typescript,GraphQL",
-    },
-    {
-      image: CachyImage,
-      url:"https://cachy.com/",
-      title: "Cachy",
-      content: "React js, Tailwind,SCSS , Redux , Antd",
-    },
-    {
-      image: PrimeImage,
-      url:"https://www.primelifespace.com/",
-      title: "Primelifespace",
-      content: "React js, SCSS , Chakra UI ,Typescript"
-    },
-    {
-      image: AmalImage,
-      url:"https://www.mypoojabox.in/",
-      title: "MypoojaBox",
-      content: "Remix js, SCSS , Context API , MUI ,GraphQL Shopify",
-    },
-    {
-      image: AmalImage,
-      url:"https://premsharma1230.github.io/cossetworld/",
-      title: "CossetWorld",
-      content: "HTML , SCSS , Bootstrap , Javascript,Tilt js",
-    },
-  ];
+export const Projects = () => { 
   return (
-    <div className="Project-wrapper">
+    <div className="Project-wrapper" id="projects">
       <div className="project-heading my-4 flex justify-center items-center">
         <h2 className="text-3xl font-bold text-orange capitalize mb-2">
           projects
         </h2>
       </div>
       <ul className="project-cards grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
-        {projectList?.map((item, index) => (
+        {ProjectList?.map((item, index) => (
           <a href={item?.url}>
             <li
               key={index}
-              className="  bg-white rounded-lg shadow-md  overflow-hidden cursor-pointer"
+              className=" h-full bg-white rounded-lg shadow-md  overflow-hidden cursor-pointer"
             >
               <figure className="overflow-hidden">
                 <Image
