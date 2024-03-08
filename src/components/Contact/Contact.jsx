@@ -1,9 +1,10 @@
+"use client"
 import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
-import emailjs from "@emailjs/browser";
-import { themeContext } from "../../Context";
+import emailjs from "@emailjs/browser"; 
+import { themeContext } from "@/utils/Context";
 const Contact = () => {
-  const theme = useContext(themeContext);
+  const theme = React.useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false)

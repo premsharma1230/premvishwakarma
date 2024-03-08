@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
-import { themeContext } from "../../Context";
+import HeartEmoji from "@/assets/img/heartemoji.png";
+import Glasses from "@/assets/img/glasses.png";
+import Humble from "@/assets/img/humble.png"; 
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import { themeContext } from "@/utils/Context";
+// import Resume from './resume.pdf';
 
 const Services = () => {
   // context
@@ -31,8 +31,8 @@ const Services = () => {
           <br />
           ispum is simpley dummy text of printing
         </spane>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
+        <a href={"#"} download>
+          <button className="button w-max mt-4">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
