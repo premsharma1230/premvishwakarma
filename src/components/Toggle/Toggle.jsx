@@ -1,3 +1,4 @@
+'use client';
 import React, { useContext } from "react";
 import "./Toggle.css";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";

@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { themeContext } from "@/utils/Context"; 
+import { themeContext } from "@/utils/Context";
 import Navbar from "../components/Navbar/Navbar";
 import Intro from "../components/Intro/Intro";
 // import Services from "../components/Services/Services";
@@ -15,17 +15,17 @@ import { Projects } from "@/components/Projects";
 export default function Home() {
   const theme = React.useContext(themeContext);
   const darkMode = theme.state.darkMode;
- 
+
   return (
-   <div className="App" 
-   style={{
-    background: darkMode ? "black" : "",
-    color: darkMode ? "white" : "",
-  }}
-   > 
+    <div className="App"
+      style={{
+        background: darkMode ? "black" : "",
+        color: darkMode ? "white" : "",
+      }}
+    >
       <Navbar />
       <Intro />
-      <Projects/>
+      <Projects />
       {/* <Services />
       <Experience />
       <Works />
@@ -33,6 +33,6 @@ export default function Home() {
       {/* <Testimonial /> */}
       <Contact />
       <Footer />
-   </div>
+    </div>
   );
 }
