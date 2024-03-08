@@ -14,7 +14,7 @@ export const Projects = () => {
           projects
         </h2>
       </div>
-      <ul className="project-cards grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
+      <ul className="project-cards grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
         {ProjectList?.map((item, index) => (
           <li
             key={index}
