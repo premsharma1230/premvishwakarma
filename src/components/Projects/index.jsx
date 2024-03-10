@@ -34,13 +34,13 @@ export const Projects = () => {
                 <WaveIcon />
               </div>
               <h2 className="text-black font-bold md:text-lg text-base capitalize flex justify-between items-center ">
-                <span> {item.title}</span>
+                <span className=" text-orange"> {item.title}</span>
                 <a href={item?.url} target="_blank">
                   <Image
                     src={GlobeIcon}
                     width={15}
                     height={15}
-                    className="transition-all duration-500 hover:rotate-180 hover:transition-all"
+                    className="cursor-pointer text-orange  transition-all duration-500 hover:rotate-180 hover:transition-all"
                   />
                 </a>
               </h2>

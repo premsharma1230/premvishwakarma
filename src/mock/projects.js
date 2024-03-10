@@ -1,6 +1,8 @@
 import AmalImage from "@/assets/img/projects/amal-bg.png";
 import CachyImage from "@/assets/img/projects/cachyImage.png";
 import PrimeImage from "@/assets/img/projects/primeImage.png";
+import CossetImage from "@/assets/img/projects/cosset.png";
+import PoojaBoxImage from "@/assets/img/projects/poojabox.png";
 export const ProjectList = [
     {
       image: AmalImage,
@@ -21,13 +23,13 @@ export const ProjectList = [
       content: "React js, SCSS , Chakra UI ,Typescript"
     },
     {
-      image: AmalImage,
+      image: PoojaBoxImage,
       url:"https://www.mypoojabox.in/",
       title: "MypoojaBox",
       content: "Remix js, SCSS , Context API , MUI ,GraphQL Shopify",
     },
     {
-      image: AmalImage,
+      image: CossetImage,
       url:"https://premsharma1230.github.io/cossetworld/",
       title: "CossetWorld",
       content: "HTML , SCSS , Bootstrap , Javascript,Tilt js",
