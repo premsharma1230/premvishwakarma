@@ -1,8 +1,9 @@
+'use client';
 import React, { useContext } from "react";
 import "./Toggle.css";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";
-import Sun from "@iconscout/react-unicons/icons/uil-sun";
-import { themeContext } from "../../Context";
+import Sun from "@iconscout/react-unicons/icons/uil-sun"; 
+import { themeContext } from "@/utils/Context";
 
 const Toggle = () => {
   const theme = useContext(themeContext);

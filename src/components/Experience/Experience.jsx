@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { themeContext } from "../../Context";
+import React, { useContext } from "react"; 
 import "./Experience.css";
+import { themeContext } from "@/utils/Context";
 const Experience = () => {
-  const theme = useContext(themeContext);
+  const theme = React.useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
