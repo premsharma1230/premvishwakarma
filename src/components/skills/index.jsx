@@ -1,31 +1,31 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import JSImage from "@/assets/img/skills/js.png";
-import TsImage from "@/assets/img/skills/ts.png";
-import HTMLImage from "@/assets/img/skills/html.png";
-import ReactJsImage from "@/assets/img/skills/reactjs.png";
-import NextJsImage from "@/assets/img/skills/nextjs.png";
-import ReduxImage from "@/assets/img/skills/redux.png";
-import RemixImage from "@/assets/img/skills/remixjs.png";
-import GraphQLImage from "@/assets/img/skills/GraphQL.png";
-import JQueryImage from "@/assets/img/skills/jquery.png";
-import CssImage from "@/assets/img/skills/css.png";
-import SCssImage from "@/assets/img/skills/scss.png";
-import LessImage from "@/assets/img/skills/less.png";
-import AntdImage from "@/assets/img/skills/antd.png";
-import BootstrapImage from "@/assets/img/skills/bootstrap.png";
-import TailwindImage from "@/assets/img/skills/tailwind.png";
-import MuiImage from "@/assets/img/skills/mui.png";
-import FrameworksImage from "@/assets/img/skills/frameworks.png";
+import JSImage from "../../assets/img/skills/js.png";
+import TsImage from "../../assets/img/skills/ts.png";
+import HTMLImage from "../../assets/img/skills/html.png";
+import ReactJsImage from "../../assets/img/skills/reactjs.png";
+import NextJsImage from "../../assets/img/skills/nextjs.png";
+import ReduxImage from "../../assets/img/skills/redux.png";
+import RemixImage from "../../assets/img/skills/remixjs.png";
+import GraphQLImage from "../../assets/img/skills/GraphQL.png";
+import JQueryImage from "../../assets/img/skills/jquery.png";
+import CssImage from "../../assets/img/skills/css.png";
+import SCssImage from "../../assets/img/skills/scss.png";
+import LessImage from "../../assets/img/skills/less.png";
+import AntdImage from "../../assets/img/skills/antd.png";
+import BootstrapImage from "../../assets/img/skills/bootstrap.png";
+import TailwindImage from "../../assets/img/skills/tailwind.png";
+import MuiImage from "../../assets/img/skills/mui.png";
+import FrameworksImage from "../../assets/img/skills/frameworks.png";
 // version--controls
-import GitImage from "@/assets/img/skills/git.png";
-import BitBucketImage from "@/assets/img/skills/bitbucket.png";
-import SourceTreeImage from "@/assets/img/skills/sourceTree.png";
-import JenkinsImage from "@/assets/img/skills/Jenkins.png";
-import GitLabImage from "@/assets/img/skills/gitLab.png";
+import GitImage from "../../assets/img/skills/git.png";
+import BitBucketImage from "../../assets/img/skills/bitbucket.png";
+import SourceTreeImage from "../../assets/img/skills/sourceTree.png";
+import JenkinsImage from "../../assets/img/skills/Jenkins.png";
+import GitLabImage from "../../assets/img/skills/gitLab.png";
 // Agile
-import Jiramage from "@/assets/img/skills/jira.png";
-import Trelloamage from "@/assets/img/skills/trello.png";
+import Jiramage from "../../assets/img/skills/jira.png";
+import Trelloamage from "../../assets/img/skills/trello.png";
 import { themeContext } from "@/utils/Context";
 const skillsList = [
     {
