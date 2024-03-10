@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Image from "next/image";
-import JSImage from "../../assets/img/skills/js.png";
+import JSImage from "../../assets/img/Skills/js.png";
 import TsImage from "../../assets/img/skills/ts.png";
 import HTMLImage from "../../assets/img/skills/html.png";
 import ReactJsImage from "../../assets/img/skills/reactjs.png";
