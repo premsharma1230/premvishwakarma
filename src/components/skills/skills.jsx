@@ -79,7 +79,7 @@ const skillsList = [
     },
   ];
 
-export const Skills = () => {
+ const Skills = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode; 
   return (
@@ -126,3 +126,4 @@ export const Skills = () => {
     </>
   );
 };
+export default Skills;
