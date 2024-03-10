@@ -8,10 +8,10 @@ import Intro from "../components/Intro/Intro";
 // import Works from "../components/Works/Works";
 // import Portfolio from "../components/Portfolio/Portfolio";
 // import Testimonial from "../components/Testimonial/Testimonial";
-import Contact from "../components/Contact/Contact";
+// import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-import { Projects } from "@/components/Projects";
-import  Skills  from "../components/Skills/index";
+import { Projects } from "@/components/Projects"; 
+import {SkillSection} from "../components/Skills/index";
 
 export default function Home() {
   const theme = useContext(themeContext);
@@ -26,7 +26,7 @@ export default function Home() {
     >
       <Navbar />
       <Intro />
-      <Skills/>
+      <SkillSection/>
       <Projects />
      
       {/* <Services />

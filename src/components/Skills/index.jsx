@@ -4,7 +4,7 @@ import Image from "next/image";
 import { themeContext } from "@/utils/Context";
 import { SkillsList } from "@/mock/skills";
 
-const Skills = () => {
+export const SkillSection = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -18,24 +18,26 @@ const Skills = () => {
         <div className="skills-cards">
           <ul className="skills-content-wrapper">
             {SkillsList?.map((item, index) => (
-              <li className="shadow-lg border border-solid p-4 rounded-lg relative">
+              <li
+                key={index}
+                className="shadow-lg border border-solid p-4 rounded-lg relative"
+              >
                 <h2 className="text-lg text-orange pb-3 font-semibold">
                   {item.title}
                 </h2>
                 <div className="blur-anime"></div>
                 <div
-                  key={index}
                   className={`grid ${item.className} relative  overflow-hidden   gap-3`}
                 >
-                  {item.languageList.map((lagItem, index) => (
+                  {item.languageList.map((lagItem, id) => (
                     <div
-                      key={index}
+                      key={id}
                       className={`border rounded-lg overflow-hidden w-[76px] border-[${lagItem?.borderColor}]`}
                     >
                       <Image
                         src={lagItem?.image}
                         className="w-full h-[50px] rounded-lg hover:scale-110 transition-all duration-500"
-                        alt="image"
+                        alt={`${lagItem.name}`}
                       />
                       <p
                         className={`${
@@ -55,4 +57,3 @@ const Skills = () => {
     </>
   );
 };
-export default Skills;
