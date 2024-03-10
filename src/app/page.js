@@ -11,6 +11,7 @@ import Intro from "../components/Intro/Intro";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import { Projects } from "@/components/Projects";
+import { Skills } from "@/components/skills";
 
 export default function Home() {
   const theme = React.useContext(themeContext);
@@ -25,7 +26,9 @@ export default function Home() {
     >
       <Navbar />
       <Intro />
+      <Skills/>
       <Projects />
+     
       {/* <Services />
       <Experience />
       <Works />

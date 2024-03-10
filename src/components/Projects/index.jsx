@@ -9,7 +9,7 @@ import GlobeIcon from "@/assets/img/projects/globeIcon.svg";
 export const Projects = () => {
   return (
     <div className="Project-wrapper" id="projects">
-      <div className="project-heading my-4 flex justify-center items-center">
+      <div className="project-heading my-4 lg:mt-16 md:mt-8 mt-4 md:mb-14 mb-4 flex justify-center items-center">
         <h2 className="text-3xl font-bold text-orange capitalize mb-2">
           projects
         </h2>
