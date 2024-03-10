@@ -1,5 +1,5 @@
 "use client"
-import React from "react";
+import React, { useContext } from "react";
 import { themeContext } from "@/utils/Context";
 import Navbar from "../components/Navbar/Navbar";
 import Intro from "../components/Intro/Intro";
@@ -14,7 +14,7 @@ import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/skills";
 
 export default function Home() {
-  const theme = React.useContext(themeContext);
+  const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
 
   return (
@@ -34,7 +34,7 @@ export default function Home() {
       <Works />
       <Portfolio /> */}
       {/* <Testimonial /> */}
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

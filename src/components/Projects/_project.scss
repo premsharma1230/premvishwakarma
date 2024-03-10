@@ -11,6 +11,11 @@
         }
       }
      li {
+         transition: all .3s ease-in-out;
+        &:hover{
+            box-shadow: 0px 11px 20px 0px #fba12854;
+            transition: all .3s ease-in-out;
+        }
          &:nth-child(2) {
              grid-row: span 2;
          }
@@ -25,17 +30,17 @@
  }
 
  .blur-anime{
-    position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(212px);
-    z-index: -9;
-    top: -18%;
-    left: 56%;
-    filter: blur(72px);
-    animation: blurAnime 4s ease-in-out forwards infinite;
+    // position: absolute;
+    // width: 22rem;
+    // height: 14rem;
+    // border-radius: 50%;
+    // background: #edd0ff;
+    // filter: blur(212px);
+    // z-index: -9;
+    // top: -18%;
+    // left: 56%;
+    // filter: blur(72px);
+    // animation: blurAnime 4s ease-in-out forwards infinite;
  }
 
  @keyframes blurAnime {

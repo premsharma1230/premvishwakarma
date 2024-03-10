@@ -30,14 +30,15 @@ const Intro = () => {
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Prem Vishwakarma</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
-          </span>
+          <p className="text-base capitalize text-[#333] font-[400!important] md:pr-16 pr-1">
+          Accomplished Front-end Developer with over 5+ years of professional experience in top-tier organizations. Skilled in
+        mentoring web developers and possessing a strong aptitude for innovative thinking. Known for professionalism and
+        expertise in simplifying complex processes within organizations
+          </p>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
-          <button className="button  w-[max!important]">Hire me</button>
-        </Link>
+        <a href="tel:9625001862" className="w-max" smooth={true} spy={true}>
+          <button className="button  w-[max!important] transition-all hover:transition-all">Hire me</button>
+        </a> 
         {/* social icons */}
         <div className="i-icons">
          <a href="https://github.com/premsharma1230"  target="_blank"> <img src={Github  .src} alt="git" title="prem git" /></a>

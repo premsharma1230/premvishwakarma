@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 import JSImage from "@/assets/img/skills/js.png";
 import TsImage from "@/assets/img/skills/ts.png";
@@ -26,10 +26,8 @@ import GitLabImage from "@/assets/img/skills/gitLab.png";
 // Agile
 import Jiramage from "@/assets/img/skills/jira.png";
 import Trelloamage from "@/assets/img/skills/trello.png";
-
-
-export const Skills = () => {
-  const skillsList = [
+import { themeContext } from "@/utils/Context";
+const skillsList = [
     {
       title: "Languages",
       className: "lg:grid-cols-3  grid-cols-2 grid",
@@ -79,9 +77,13 @@ export const Skills = () => {
       ],
     },
   ];
+
+export const Skills = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode; 
   return (
     <>
-      <div className="skills-wrapper mt-4">
+      <div className="skills-wrapper mt-4" id="skills">
         <div className="skills-heading my-4 flex justify-center items-center">
           <h2 className="text-3xl font-bold text-orange capitalize mb-2">
             skills
@@ -109,7 +111,7 @@ export const Skills = () => {
                         className="w-full h-[50px] rounded-lg hover:scale-110 transition-all duration-500"
                         alt="image"
                       />
-                      <p className="text-black font-bold text-xs py-2 px-2 text-center">
+                      <p className={`${darkMode ? "text-[white!important]":""}"text-black font-bold text-xs py-2 px-2 text-center"`}>
                         {lagItem.name}
                       </p>
                     </div>

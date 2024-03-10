@@ -23,7 +23,7 @@ const navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="#services" spy={true} smooth={true}>
+              <Link href="#skills" spy={true} smooth={true}>
                 Skills
               </Link>
             </li>
@@ -44,7 +44,7 @@ const navbar = () => {
             </li>
           </ul>
         </div>
-        <Link href="#contact" spy={true} smooth={true}>
+        <Link href="tel:9625001862"  spy={true} smooth={true}>
           <button className="button n-button">Contact</button>
         </Link>
       </div>
