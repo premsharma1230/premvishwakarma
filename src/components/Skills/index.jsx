@@ -33,7 +33,7 @@ import Trelloamage from "@/assets/img/skillsImage/trello.png";
 const SkillsList = [
   {
     title: "Languages",
-    className: "lg:grid-cols-3 grid-cols-2",
+    className: "lg:grid-cols-3 grid-cols-3",
     languageList: [
       { name: "Javascript", image: JSImage, borderColor: "#FFF65C" },
       { name: "Typscript", image: TsImage, borderColor: "#328FCC" },
@@ -42,7 +42,7 @@ const SkillsList = [
   },
   {
     title: "Library and Frameworks",
-    className: "lg:grid-cols-8 md:grid-cols-4 grid grid-cols-2",
+    className: "lg:grid-cols-8 md:grid-cols-4 grid grid-cols-3",
     languageList: [
       { name: "React Js", image: ReactJsImage },
       { name: "Next Js", image: NextJsImage },
@@ -62,7 +62,7 @@ const SkillsList = [
   },
   {
     title: "Version Controls",
-    className: "lg:grid-cols-4 md:grid-cols-3  grid grid-cols-2",
+    className: "lg:grid-cols-4 md:grid-cols-3  grid grid-cols-3",
     languageList: [
       { name: "Git", image: GitImage },
       { name: "Bit-bucket", image: BitBucketImage },
@@ -85,7 +85,7 @@ export const SkillSection = () => {
   const darkMode = theme.state.darkMode;
   return (
     <>
-      <div className="skills-wrapper mt-4" id="skills">
+      <div className="skills-wrapper sm:mt-4 mt-12" id="skills">
         <div className="skills-heading my-4 flex justify-center items-center">
           <h2 className="text-3xl font-bold text-orange capitalize mb-2">
             skills

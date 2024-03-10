@@ -29,6 +29,11 @@
   font-weight: bold;
   font-size: 3rem;
 }
+@media screen and (max-width: 480px) {
+  .i-name > :nth-child(1),.i-name > :nth-child(2) { 
+    font-size: 2.5rem;
+  } 
+}
 .i-name > :nth-child(3) {
   font-weight: 100;
   font-size: 14px;
@@ -109,6 +114,7 @@
     flex-direction: column;
     gap: 7rem;
     height: 64rem;
+    margin-top: 1rem;
   }
   .blur {
     left: 0%; 
