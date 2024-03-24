@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect, useState } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
@@ -13,10 +13,10 @@ const navbar = () => {
     };
 
     handleResize(); // Initial check
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
   return (
@@ -67,7 +67,10 @@ const navbar = () => {
             <button className="button n-button">Contact</button>
           </Link>
         ) : (
-          <Link href="https://drive.google.com/file/d/1CTq_4IgNYyyT8GtqyqDcwcvafwAz1yoX/view?usp=sharing" target="_blank" >
+          <Link
+            href="https://drive.google.com/file/d/1CTq_4IgNYyyT8GtqyqDcwcvafwAz1yoX/view?usp=sharing"
+            target="_blank"
+          >
             <button className="button n-button">Resume</button>
           </Link>
         )}
