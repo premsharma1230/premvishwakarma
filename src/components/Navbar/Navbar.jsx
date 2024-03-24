@@ -1,9 +1,24 @@
-import React from "react";
+'use client';
+import React, { useEffect, useState } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import Link from "next/link";
 // import { Link } from "react-scroll";
 const navbar = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 480);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
@@ -38,15 +53,24 @@ const navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/resume" spy={true} smooth={true}>
+              <Link
+                href="https://drive.google.com/file/d/1CTq_4IgNYyyT8GtqyqDcwcvafwAz1yoX/view?usp=sharing"
+                target="_blank"
+              >
                 Resume
               </Link>
             </li>
           </ul>
         </div>
-        <Link href="tel:9625001862"  spy={true} smooth={true}>
-          <button className="button n-button">Contact</button>
-        </Link>
+        {!isMobile ? (
+          <Link href="tel:9625001862" spy={true} smooth={true}>
+            <button className="button n-button">Contact</button>
+          </Link>
+        ) : (
+          <Link href="https://drive.google.com/file/d/1CTq_4IgNYyyT8GtqyqDcwcvafwAz1yoX/view?usp=sharing" target="_blank" >
+            <button className="button n-button">Resume</button>
+          </Link>
+        )}
       </div>
     </div>
   );

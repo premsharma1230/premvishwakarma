@@ -5,6 +5,10 @@ const Resume = () => {
         <div className="App">
             <Navbar />
             <div>Resume</div>
+            <iframe 
+            width={500}
+            height={500}
+            src='https://drive.google.com/file/d/1CTq_4IgNYyyT8GtqyqDcwcvafwAz1yoX/view?usp=sharing'></iframe>
         </div>
     )
 }

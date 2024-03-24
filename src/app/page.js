@@ -12,6 +12,7 @@ import Intro from "../components/Intro/Intro";
 import Footer from "../components/Footer/Footer";
 import { Projects } from "@/components/Projects"; 
 import {SkillSection} from "../components/Skills/index";
+import { WhatsApp } from "@/components/whats-app";
 
 export default function Home() {
   const theme = useContext(themeContext);
@@ -36,6 +37,7 @@ export default function Home() {
       {/* <Testimonial /> */}
       {/* <Contact /> */}
       <Footer />
+      <WhatsApp />
     </div>
   );
 }
