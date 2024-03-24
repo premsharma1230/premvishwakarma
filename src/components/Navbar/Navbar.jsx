@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import Link from "next/link";
-// import { Link } from "react-scroll";
-const navbar = () => {
+
+const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -79,4 +79,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
